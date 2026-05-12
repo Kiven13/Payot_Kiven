@@ -1,15 +1,21 @@
 <!--
 File: index.html
-Modern 2026 Portfolio UI
+Modern 2026 Portfolio UI - Enhanced Version
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Kiven Payot — 2026 Portfolio</title>
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Kiven Payot — Premium Portfolio</title>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -17,6 +23,7 @@ Modern 2026 Portfolio UI
   />
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -24,26 +31,42 @@ Modern 2026 Portfolio UI
     }
 
     :root {
-      --bg: #06070d;
-      --surface: rgba(255, 255, 255, 0.05);
-      --surface-2: rgba(255, 255, 255, 0.03);
 
-      --border: rgba(255, 255, 255, 0.08);
+      --bg:
+        #04050a;
 
-      --text: #f3f4ff;
-      --muted: rgba(243, 244, 255, 0.58);
+      --surface:
+        rgba(255,255,255,0.06);
 
-      --accent: #8b7cff;
-      --accent2: #ff74c8;
-      --accent3: #5fffe0;
+      --surface-2:
+        rgba(255,255,255,0.03);
 
-      --radius: 24px;
+      --border:
+        rgba(255,255,255,0.08);
 
-      --shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25),
-        0 0 0 1px rgba(255,255,255,0.03);
+      --text:
+        #f5f7ff;
 
-      --blur: blur(24px) saturate(180%);
+      --muted:
+        rgba(245,247,255,0.65);
+
+      --accent:
+        #7c5cff;
+
+      --accent2:
+        #ff5fd2;
+
+      --accent3:
+        #53ffe0;
+
+      --accent4:
+        #ffc857;
+
+      --radius:
+        28px;
+
+      --blur:
+        blur(24px) saturate(180%);
     }
 
     html {
@@ -51,58 +74,129 @@ Modern 2026 Portfolio UI
     }
 
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
-      line-height: 1.7;
-      cursor: none;
-      overscroll-behavior: none;
+
+      background:
+        var(--bg);
+
+      color:
+        var(--text);
+
+      font-family:
+        'Inter',
+        sans-serif;
+
+      overflow-x:
+        hidden;
+
+      line-height:
+        1.7;
+
+      cursor:
+        none;
     }
 
     body::before {
-      content: '';
-      position: fixed;
-      inset: -20%;
-      z-index: -3;
+
+      content:
+        '';
+
+      position:
+        fixed;
+
+      inset:
+        -20%;
+
+      z-index:
+        -3;
 
       background:
-        radial-gradient(circle at 20% 20%, rgba(139,124,255,0.18), transparent 30%),
-        radial-gradient(circle at 80% 30%, rgba(255,116,200,0.16), transparent 30%),
-        radial-gradient(circle at 50% 80%, rgba(95,255,224,0.12), transparent 35%);
 
-      filter: blur(100px);
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(124,92,255,0.20),
+          transparent 30%
+        ),
 
-      animation: aurora 16s ease infinite alternate;
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(255,95,210,0.18),
+          transparent 30%
+        ),
+
+        radial-gradient(
+          circle at 50% 90%,
+          rgba(83,255,224,0.12),
+          transparent 35%
+        );
+
+      filter:
+        blur(120px);
+
+      animation:
+        aurora 12s ease infinite alternate;
     }
 
     @keyframes aurora {
+
       0% {
-        transform: scale(1) translate3d(0,0,0);
+        transform:
+          scale(1)
+          translate3d(0,0,0);
       }
+
       100% {
-        transform: scale(1.1) translate3d(-5%,3%,0);
+        transform:
+          scale(1.15)
+          translate3d(-5%,4%,0);
       }
     }
 
     body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      opacity: 0.03;
+
+      content:
+        '';
+
+      position:
+        fixed;
+
+      inset:
+        0;
+
+      z-index:
+        -2;
+
+      opacity:
+        .04;
 
       background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        radial-gradient(
+          rgba(255,255,255,.4) 1px,
+          transparent 1px
+        );
+
+      background-size:
+        35px 35px;
     }
 
     #scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      z-index: 99999;
+
+      position:
+        fixed;
+
+      top:
+        0;
+
+      left:
+        0;
+
+      width:
+        0%;
+
+      height:
+        4px;
+
+      z-index:
+        9999;
 
       background:
         linear-gradient(
@@ -113,124 +207,192 @@ Modern 2026 Portfolio UI
         );
 
       box-shadow:
-        0 0 25px rgba(139,124,255,0.9);
+        0 0 25px rgba(124,92,255,.8);
     }
 
     canvas {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      pointer-events: none;
+
+      position:
+        fixed;
+
+      inset:
+        0;
+
+      z-index:
+        -1;
+
+      pointer-events:
+        none;
     }
 
     #cursor-dot,
     #cursor-ring {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 9999;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      mix-blend-mode: difference;
+
+      position:
+        fixed;
+
+      top:
+        0;
+
+      left:
+        0;
+
+      border-radius:
+        50%;
+
+      pointer-events:
+        none;
+
+      transform:
+        translate(-50%, -50%);
+
+      z-index:
+        9999;
     }
 
     #cursor-dot {
-      width: 8px;
-      height: 8px;
-      background: white;
+
+      width:
+        8px;
+
+      height:
+        8px;
+
+      background:
+        white;
     }
 
     #cursor-ring {
-      width: 44px;
-      height: 44px;
 
-      border: 1px solid rgba(255,255,255,0.5);
+      width:
+        45px;
 
-      background: rgba(255,255,255,0.03);
+      height:
+        45px;
 
-      backdrop-filter: blur(5px);
+      border:
+        1px solid rgba(255,255,255,.4);
 
-      box-shadow:
-        0 0 30px rgba(139,124,255,0.45),
-        inset 0 0 10px rgba(255,255,255,0.05);
+      background:
+        rgba(255,255,255,.03);
+
+      backdrop-filter:
+        blur(5px);
 
       transition:
-        width .3s ease,
-        height .3s ease,
-        border-color .3s ease;
+        .25s ease;
     }
 
     body:has(a:hover) #cursor-ring,
     body:has(button:hover) #cursor-ring {
-      width: 70px;
-      height: 70px;
-      border-color: var(--accent);
+
+      width:
+        70px;
+
+      height:
+        70px;
+
+      border-color:
+        var(--accent3);
     }
 
     #sidebar {
-      position: fixed;
-      left: 24px;
-      top: 24px;
-      bottom: 24px;
 
-      width: 270px;
+      position:
+        fixed;
 
-      border-radius: 32px;
+      left:
+        24px;
 
-      background: rgba(255,255,255,0.04);
+      top:
+        24px;
 
-      backdrop-filter: var(--blur);
-      -webkit-backdrop-filter: var(--blur);
+      bottom:
+        24px;
 
-      border: 1px solid rgba(255,255,255,0.08);
+      width:
+        285px;
+
+      padding:
+        32px 24px;
+
+      border-radius:
+        34px;
+
+      background:
+        rgba(255,255,255,.04);
+
+      border:
+        1px solid rgba(255,255,255,.08);
+
+      backdrop-filter:
+        var(--blur);
 
       box-shadow:
-        0 20px 80px rgba(0,0,0,0.45);
+        0 25px 80px rgba(0,0,0,.45);
 
-      z-index: 100;
+      z-index:
+        100;
 
-      padding: 32px 22px;
+      display:
+        flex;
 
-      display: flex;
-      flex-direction: column;
+      flex-direction:
+        column;
     }
 
     .avatar {
-      width: 92px;
-      height: 92px;
 
-      margin-inline: auto;
-      margin-bottom: 20px;
+      width:
+        100px;
 
-      border-radius: 50%;
+      height:
+        100px;
 
-      background:
-        linear-gradient(
-          135deg,
-          var(--accent),
-          var(--accent2),
-          var(--accent3)
-        );
+      margin:
+        0 auto 20px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius:
+        50%;
 
-      font-size: 30px;
-      font-weight: 800;
-      font-family: 'Syne', sans-serif;
+      overflow:
+        hidden;
 
-      position: relative;
+      position:
+        relative;
+
+      border:
+        3px solid rgba(255,255,255,.1);
+
+      box-shadow:
+        0 0 40px rgba(124,92,255,.3);
     }
 
-    .avatar::after {
-      content: '';
+    .avatar img {
 
-      position: absolute;
-      inset: -4px;
+      width:
+        100%;
 
-      border-radius: inherit;
+      height:
+        100%;
+
+      object-fit:
+        cover;
+    }
+
+    .avatar::before {
+
+      content:
+        '';
+
+      position:
+        absolute;
+
+      inset:
+        -5px;
+
+      border-radius:
+        inherit;
 
       background:
         conic-gradient(
@@ -240,96 +402,163 @@ Modern 2026 Portfolio UI
           var(--accent)
         );
 
-      z-index: -1;
+      z-index:
+        -1;
 
-      animation: spin 6s linear infinite;
+      animation:
+        spin 5s linear infinite;
     }
 
     @keyframes spin {
+
       to {
-        transform: rotate(360deg);
+        transform:
+          rotate(360deg);
       }
     }
 
     .name {
-      text-align: center;
-      font-family: 'Syne', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
+
+      text-align:
+        center;
+
+      font-family:
+        'Syne',
+        sans-serif;
+
+      font-size:
+        24px;
+
+      font-weight:
+        800;
     }
 
     .role {
-      text-align: center;
-      margin-top: 4px;
-      color: var(--accent);
-      font-size: 12px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 40px;
+
+      text-align:
+        center;
+
+      margin-top:
+        5px;
+
+      color:
+        var(--accent3);
+
+      letter-spacing:
+        .18em;
+
+      font-size:
+        12px;
+
+      text-transform:
+        uppercase;
+
+      margin-bottom:
+        45px;
     }
 
     .nav {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      gap:
+        10px;
     }
 
     .nav a {
-      text-decoration: none;
-      color: var(--muted);
 
-      padding: 14px 18px;
+      text-decoration:
+        none;
 
-      border-radius: 18px;
+      color:
+        var(--muted);
 
-      transition: .25s ease;
+      padding:
+        15px 18px;
 
-      border: 1px solid transparent;
+      border-radius:
+        18px;
+
+      transition:
+        .3s ease;
     }
 
     .nav a:hover,
     .nav a.active {
-      color: white;
 
-      background: rgba(255,255,255,0.05);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(124,92,255,.18),
+          rgba(255,95,210,.12)
+        );
 
-      border-color: rgba(255,255,255,0.08);
+      color:
+        white;
 
-      transform: translateX(5px);
+      transform:
+        translateX(6px);
     }
 
     .socials {
-      margin-top: auto;
 
-      display: flex;
-      gap: 10px;
-      justify-content: center;
+      margin-top:
+        auto;
+
+      display:
+        flex;
+
+      justify-content:
+        center;
+
+      gap:
+        12px;
     }
 
     .socials a {
-      width: 42px;
-      height: 42px;
 
-      border-radius: 14px;
+      width:
+        46px;
 
-      text-decoration: none;
+      height:
+        46px;
 
-      color: var(--muted);
+      border-radius:
+        14px;
 
-      background: rgba(255,255,255,0.05);
+      display:
+        flex;
 
-      border: 1px solid rgba(255,255,255,0.06);
+      align-items:
+        center;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content:
+        center;
 
-      transition: .3s ease;
+      text-decoration:
+        none;
+
+      color:
+        white;
+
+      background:
+        rgba(255,255,255,.05);
+
+      border:
+        1px solid rgba(255,255,255,.08);
+
+      transition:
+        .3s ease;
     }
 
     .socials a:hover {
-      transform: translateY(-4px);
-      color: white;
+
+      transform:
+        translateY(-4px);
 
       background:
         linear-gradient(
@@ -340,46 +569,60 @@ Modern 2026 Portfolio UI
     }
 
     #main {
-      margin-left: 330px;
+      margin-left: 340px;
     }
 
     section {
-      min-height: 100vh;
+
+      min-height:
+        100vh;
 
       padding:
-        120px
-        80px;
+        120px 80px;
 
-      position: relative;
+      position:
+        relative;
     }
 
     .eyebrow {
-      color: var(--accent);
 
-      font-size: 12px;
+      color:
+        var(--accent3);
 
-      text-transform: uppercase;
+      text-transform:
+        uppercase;
 
-      letter-spacing: 0.22em;
+      letter-spacing:
+        .25em;
 
-      margin-bottom: 20px;
+      font-size:
+        12px;
+
+      margin-bottom:
+        18px;
     }
 
     .headline {
-      font-family: 'Syne', sans-serif;
 
-      font-size: clamp(70px, 9vw, 150px);
+      font-family:
+        'Syne',
+        sans-serif;
 
-      line-height: 0.92;
+      font-size:
+        clamp(72px, 9vw, 150px);
 
-      letter-spacing: -0.07em;
+      line-height:
+        .92;
 
-      max-width: 900px;
+      letter-spacing:
+        -.07em;
 
-      text-wrap: balance;
+      max-width:
+        950px;
     }
 
     .gradient {
+
       background:
         linear-gradient(
           90deg,
@@ -388,60 +631,85 @@ Modern 2026 Portfolio UI
           var(--accent3)
         );
 
-      background-size: 200%;
+      background-size:
+        200%;
 
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-background-clip:
+        text;
 
-      animation: gradient 5s ease infinite;
+      -webkit-text-fill-color:
+        transparent;
+
+      animation:
+        gradient 5s ease infinite;
     }
 
     @keyframes gradient {
+
       0% {
-        background-position: 0%;
+        background-position:
+          0%;
       }
+
       100% {
-        background-position: 100%;
+        background-position:
+          100%;
       }
     }
 
     .hero-desc {
-      max-width: 620px;
 
-      margin-top: 36px;
+      max-width:
+        650px;
 
-      color: var(--muted);
+      margin-top:
+        35px;
 
-      font-size: 18px;
+      font-size:
+        18px;
+
+      color:
+        var(--muted);
     }
 
     .buttons {
-      margin-top: 40px;
 
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
+      margin-top:
+        45px;
+
+      display:
+        flex;
+
+      gap:
+        18px;
+
+      flex-wrap:
+        wrap;
     }
 
     .btn {
-      padding: 16px 30px;
 
-      border-radius: 100px;
+      padding:
+        16px 32px;
 
-      text-decoration: none;
+      border-radius:
+        999px;
 
-      font-weight: 600;
+      text-decoration:
+        none;
 
-      transition: .3s ease;
+      font-weight:
+        600;
 
-      border: 1px solid rgba(255,255,255,0.08);
+      border:
+        1px solid rgba(255,255,255,.08);
 
-      position: relative;
-
-      overflow: hidden;
+      transition:
+        .3s ease;
     }
 
     .btn-primary {
+
       background:
         linear-gradient(
           135deg,
@@ -449,105 +717,140 @@ Modern 2026 Portfolio UI
           var(--accent2)
         );
 
-      color: white;
+      color:
+        white;
 
       box-shadow:
-        0 20px 40px rgba(139,124,255,0.25);
+        0 20px 40px rgba(124,92,255,.3);
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.04);
 
-      backdrop-filter: var(--blur);
+      background:
+        rgba(255,255,255,.04);
 
-      color: white;
+      color:
+        white;
+
+      backdrop-filter:
+        var(--blur);
     }
 
     .btn:hover {
+
       transform:
-        translateY(-4px)
-        scale(1.02);
+        translateY(-5px)
+        scale(1.03);
     }
 
     .section-title {
-      font-family: 'Syne', sans-serif;
 
-      font-size: clamp(42px, 5vw, 72px);
+      font-family:
+        'Syne',
+        sans-serif;
 
-      line-height: 1;
+      font-size:
+        clamp(44px, 5vw, 72px);
 
-      letter-spacing: -0.05em;
-
-      margin-bottom: 20px;
-
-      text-wrap: balance;
+      margin-bottom:
+        20px;
     }
 
     .divider {
-      width: 70px;
-      height: 4px;
 
-      border-radius: 999px;
+      width:
+        90px;
+
+      height:
+        4px;
+
+      border-radius:
+        999px;
+
+      margin-bottom:
+        60px;
 
       background:
         linear-gradient(
           90deg,
           var(--accent),
-          var(--accent2)
+          var(--accent3)
         );
-
-      margin-bottom: 60px;
     }
 
     .about-grid {
-      display: grid;
-      grid-template-columns: 400px 1fr;
-      gap: 50px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        400px 1fr;
+
+      gap:
+        50px;
     }
 
     .glass {
-      background: var(--surface);
 
-      border: 1px solid rgba(255,255,255,0.08);
+      background:
+        var(--surface);
 
-      backdrop-filter: var(--blur);
+      border:
+        1px solid rgba(255,255,255,.08);
 
-      border-radius: var(--radius);
+      backdrop-filter:
+        var(--blur);
 
-      box-shadow: var(--shadow);
+      border-radius:
+        var(--radius);
 
-      position: relative;
+      position:
+        relative;
 
-      overflow: hidden;
+      overflow:
+        hidden;
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
     }
 
     .glass::before {
-      content: '';
 
-      position: absolute;
-      inset: -1px;
+      content:
+        '';
 
-      border-radius: inherit;
+      position:
+        absolute;
 
-      padding: 1px;
+      inset:
+        -1px;
+
+      border-radius:
+        inherit;
+
+      padding:
+        1px;
 
       background:
         linear-gradient(
           135deg,
-          rgba(139,124,255,0.8),
-          rgba(255,116,200,0.5),
-          rgba(95,255,224,0.5)
+          rgba(124,92,255,.7),
+          rgba(255,95,210,.5),
+          rgba(83,255,224,.4)
         );
 
       -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
 
-      -webkit-mask-composite: xor;
+      -webkit-mask-composite:
+        xor;
 
-      opacity: 0;
+      opacity:
+        0;
 
-      transition: opacity .4s ease;
+      transition:
+        .4s ease;
     }
 
     .glass:hover::before {
@@ -559,165 +862,219 @@ Modern 2026 Portfolio UI
     }
 
     .profile-image {
-      width: 100%;
-      aspect-ratio: 3/4;
 
-      border-radius: 20px;
+      width:
+        100%;
 
-      margin-bottom: 25px;
+      aspect-ratio:
+        3/4;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius:
+        24px;
 
-      font-size: 90px;
+      overflow:
+        hidden;
+
+      position:
+        relative;
+
+      margin-bottom:
+        28px;
+
+      border:
+        1px solid rgba(255,255,255,.1);
+
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.4);
+    }
+
+    .profile-image img {
+
+      width:
+        100%;
+
+      height:
+        100%;
+
+      object-fit:
+        cover;
+
+      transition:
+        transform .7s ease;
+    }
+
+    .profile-image:hover img {
+
+      transform:
+        scale(1.08);
+    }
+
+    .profile-image::after {
+
+      content:
+        '';
+
+      position:
+        absolute;
+
+      inset:
+        0;
 
       background:
         linear-gradient(
-          135deg,
-          rgba(139,124,255,0.18),
-          rgba(255,116,200,0.08)
+          to top,
+          rgba(0,0,0,.5),
+          transparent
         );
     }
 
     .info {
-      display: flex;
-      justify-content: space-between;
 
-      padding: 12px 0;
+      display:
+        flex;
 
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      justify-content:
+        space-between;
 
-      font-size: 14px;
-    }
+      padding:
+        14px 0;
 
-    .info:last-child {
-      border-bottom: none;
+      border-bottom:
+        1px solid rgba(255,255,255,.06);
     }
 
     .label {
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 11px;
+
+      color:
+        var(--muted);
+
+      text-transform:
+        uppercase;
+
+      font-size:
+        11px;
+
+      letter-spacing:
+        .12em;
     }
 
     .bio {
-      color: var(--muted);
 
-      margin-bottom: 26px;
+      color:
+        var(--muted);
 
-      font-size: 16px;
+      margin-bottom:
+        25px;
+
+      font-size:
+        17px;
     }
 
     .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        12px;
     }
 
     .skill {
-      padding: 10px 16px;
 
-      border-radius: 999px;
+      padding:
+        10px 18px;
 
-      background: rgba(255,255,255,0.05);
+      border-radius:
+        999px;
 
-      border: 1px solid rgba(255,255,255,0.06);
+      background:
+        rgba(255,255,255,.05);
 
-      font-size: 13px;
+      border:
+        1px solid rgba(255,255,255,.08);
 
-      transition: .25s ease;
+      transition:
+        .3s ease;
     }
 
     .skill:hover {
-      transform: translateY(-3px);
+
+      transform:
+        translateY(-4px);
 
       background:
         linear-gradient(
           135deg,
-          rgba(139,124,255,0.15),
-          rgba(255,116,200,0.12)
+          rgba(124,92,255,.18),
+          rgba(255,95,210,.15)
         );
     }
 
     .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        26px;
     }
 
     .card {
-      position: relative;
 
-      overflow: hidden;
+      border-radius:
+        30px;
 
-      border-radius: 30px;
+      overflow:
+        hidden;
 
-      background: var(--surface);
+      background:
+        var(--surface);
 
-      backdrop-filter: var(--blur);
+      border:
+        1px solid rgba(255,255,255,.08);
 
-      border: 1px solid rgba(255,255,255,0.08);
-
-      box-shadow: var(--shadow);
+      backdrop-filter:
+        var(--blur);
 
       transition:
-        transform .5s cubic-bezier(.16,1,.3,1),
-        box-shadow .4s ease;
+        .5s ease;
 
-      transform-style: preserve-3d;
+      position:
+        relative;
     }
 
     .card:hover {
+
       transform:
         translateY(-10px)
-        rotateX(4deg)
-        rotateY(-4deg)
         scale(1.02);
 
       box-shadow:
-        0 30px 80px rgba(0,0,0,0.45);
-    }
-
-    .card::after {
-      content: '';
-
-      position: absolute;
-      inset: 0;
-
-      background:
-        radial-gradient(
-          circle at var(--x) var(--y),
-          rgba(255,255,255,0.14),
-          transparent 40%
-        );
-
-      opacity: 0;
-
-      transition: opacity .3s ease;
-
-      pointer-events: none;
-    }
-
-    .card:hover::after {
-      opacity: 1;
+        0 30px 80px rgba(0,0,0,.4);
     }
 
     .thumb {
-      height: 240px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height:
+        240px;
 
-      font-size: 70px;
+      display:
+        flex;
 
-      transition: transform .6s ease;
-    }
+      align-items:
+        center;
 
-    .card:hover .thumb {
-      transform: scale(1.08);
+      justify-content:
+        center;
+
+      font-size:
+        80px;
     }
 
     .card-content {
@@ -725,34 +1082,50 @@ Modern 2026 Portfolio UI
     }
 
     .tag {
-      color: var(--accent);
 
-      text-transform: uppercase;
+      color:
+        var(--accent3);
 
-      letter-spacing: 0.14em;
+      font-size:
+        11px;
 
-      font-size: 11px;
+      letter-spacing:
+        .15em;
 
-      margin-bottom: 12px;
+      text-transform:
+        uppercase;
+
+      margin-bottom:
+        12px;
     }
 
     .card-title {
-      font-family: 'Syne', sans-serif;
 
-      font-size: 24px;
+      font-family:
+        'Syne',
+        sans-serif;
 
-      margin-bottom: 10px;
+      font-size:
+        25px;
+
+      margin-bottom:
+        10px;
     }
 
     .card-desc {
       color: var(--muted);
-      font-size: 15px;
     }
 
     .contact-grid {
-      display: grid;
-      grid-template-columns: 400px 1fr;
-      gap: 40px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        400px 1fr;
+
+      gap:
+        40px;
     }
 
     .contact-card,
@@ -765,20 +1138,30 @@ Modern 2026 Portfolio UI
     }
 
     .contact-small {
-      color: var(--muted);
 
-      text-transform: uppercase;
+      color:
+        var(--muted);
 
-      letter-spacing: 0.12em;
+      text-transform:
+        uppercase;
 
-      font-size: 11px;
+      font-size:
+        11px;
 
-      margin-bottom: 6px;
+      letter-spacing:
+        .15em;
+
+      margin-bottom:
+        8px;
     }
 
     .contact-big {
-      font-size: 18px;
-      font-weight: 600;
+
+      font-size:
+        18px;
+
+      font-weight:
+        600;
     }
 
     .form-group {
@@ -787,75 +1170,104 @@ Modern 2026 Portfolio UI
 
     input,
     textarea {
-      width: 100%;
 
-      padding: 18px 20px;
+      width:
+        100%;
 
-      border-radius: 18px;
+      padding:
+        18px 20px;
 
-      border: 1px solid rgba(255,255,255,0.08);
+      border-radius:
+        18px;
 
-      background: rgba(255,255,255,0.04);
+      border:
+        1px solid rgba(255,255,255,.08);
 
-      color: white;
+      background:
+        rgba(255,255,255,.04);
 
-      font-family: inherit;
+      color:
+        white;
 
-      font-size: 15px;
+      outline:
+        none;
 
-      outline: none;
+      font-size:
+        15px;
 
-      transition: .25s ease;
+      transition:
+        .3s ease;
     }
 
     input:focus,
     textarea:focus {
-      border-color: var(--accent);
+
+      border-color:
+        var(--accent3);
 
       box-shadow:
-        0 0 0 4px rgba(139,124,255,0.12);
+        0 0 0 4px rgba(83,255,224,.1);
     }
 
     textarea {
-      resize: vertical;
-      min-height: 150px;
+
+      min-height:
+        160px;
+
+      resize:
+        vertical;
     }
 
     footer {
-      padding: 40px 80px;
 
-      margin-left: 330px;
+      margin-left:
+        340px;
 
-      border-top: 1px solid rgba(255,255,255,0.08);
+      padding:
+        40px 80px;
 
-      color: var(--muted);
+      border-top:
+        1px solid rgba(255,255,255,.08);
 
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+      color:
+        var(--muted);
+
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        20px;
     }
 
     .reveal {
-      opacity: 0;
+
+      opacity:
+        0;
 
       transform:
-        translateY(60px)
-        scale(.96);
+        translateY(60px);
 
       transition:
-        opacity .9s cubic-bezier(.16,1,.3,1),
-        transform .9s cubic-bezier(.16,1,.3,1);
+        1s cubic-bezier(.16,1,.3,1);
     }
 
     .reveal.visible {
-      opacity: 1;
+
+      opacity:
+        1;
+
       transform:
-        translateY(0)
-        scale(1);
+        translateY(0);
     }
 
     @media (max-width: 1100px) {
+
       body {
         cursor: auto;
       }
@@ -866,15 +1278,21 @@ Modern 2026 Portfolio UI
       }
 
       #sidebar {
-        position: relative;
 
-        width: calc(100% - 40px);
+        position:
+          relative;
 
-        height: auto;
+        width:
+          calc(100% - 40px);
 
-        left: 20px;
-        top: 20px;
-        bottom: auto;
+        left:
+          20px;
+
+        top:
+          20px;
+
+        bottom:
+          auto;
       }
 
       #main,
@@ -892,7 +1310,9 @@ Modern 2026 Portfolio UI
         grid-template-columns: 1fr;
       }
     }
+
   </style>
+
 </head>
 
 <body>
@@ -905,10 +1325,18 @@ Modern 2026 Portfolio UI
 <canvas id="particles"></canvas>
 
 <aside id="sidebar">
-  <div class="avatar">KP</div>
 
-  <div class="name">Kiven Payot</div>
-  <div class="role">Designer · Developer</div>
+  <div class="avatar">
+    <img src="images/kiven.jpg" alt="Kiven Payot">
+  </div>
+
+  <div class="name">
+    Kiven Payot
+  </div>
+
+  <div class="role">
+    Designer · Developer
+  </div>
 
   <nav class="nav">
     <a href="#hero" class="active">Home</a>
@@ -918,113 +1346,197 @@ Modern 2026 Portfolio UI
   </nav>
 
   <div class="socials">
-    <a href="https://www.facebook.com/kiven.payot/">fb</a>
-    <a href="https://www.instagram.com/kei_vein/?hl=en">ig</a>
-    <a href="https://www.tiktok.com/@kibin.0?lang=en">tt</a>
+
+    <a href="https://www.facebook.com/kiven.payot/">
+      fb
+    </a>
+
+    <a href="https://www.instagram.com/kei_vein/?hl=en">
+      ig
+    </a>
+
+    <a href="https://www.tiktok.com/@kibin.0?lang=en">
+      tt
+    </a>
+
   </div>
+
 </aside>
 
 <main id="main">
 
-  <section id="hero">
+<section id="hero">
 
-    <div class="reveal visible">
-      <div class="eyebrow">
-        UI/UX Designer & Web Developer
+  <div class="reveal visible">
+
+    <div class="eyebrow">
+      UI/UX Designer & Web Developer
+    </div>
+
+    <h1 class="headline">
+
+      Building
+
+      <span class="gradient">
+        Experiences
+      </span>
+
+      That Inspire
+
+    </h1>
+
+    <p class="hero-desc">
+
+      Hi, I'm Kiven — a Computer Engineering student from Bohol, Philippines creating premium digital experiences with modern aesthetics, immersive motion, and futuristic interaction systems.
+
+    </p>
+
+    <div class="buttons">
+
+      <a href="#portfolio" class="btn btn-primary">
+        View Work →
+      </a>
+
+      <a href="#contact" class="btn btn-secondary">
+        Contact Me
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <div class="reveal">
+
+    <div class="eyebrow">
+      About
+    </div>
+
+    <h2 class="section-title">
+      Who I Am
+    </h2>
+
+    <div class="divider"></div>
+
+  </div>
+
+  <div class="about-grid">
+
+    <div class="glass profile-card reveal">
+
+      <div class="profile-image">
+        <img src="images/kiven.jpg" alt="Kiven Payot">
       </div>
 
-      <h1 class="headline">
-        Building
-        <span class="gradient">
-          Experiences
-        </span>
-        That Inspire
-      </h1>
+      <div class="info">
+        <span class="label">Name</span>
+        <span>Kiven S. Payot</span>
+      </div>
 
-      <p class="hero-desc">
-        Hi, I'm Kiven — a Computer Engineering student from Bohol, Philippines creating premium digital experiences with modern aesthetics, interaction design, and purposeful development.
+      <div class="info">
+        <span class="label">Age</span>
+        <span>19</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Location</span>
+        <span>Bohol, Philippines</span>
+      </div>
+
+      <div class="info">
+        <span class="label">Freelance</span>
+
+        <span style="color:var(--accent3)">
+          Available
+        </span>
+      </div>
+
+    </div>
+
+    <div class="reveal">
+
+      <p class="bio">
+
+        I'm passionate about creating immersive user experiences and futuristic digital products that combine premium aesthetics with functional engineering.
+
       </p>
 
-      <div class="buttons">
-        <a href="#portfolio" class="btn btn-primary">
-          View Work →
-        </a>
+      <p class="bio">
 
-        <a href="#contact" class="btn btn-secondary">
-          Contact Me
-        </a>
+        I enjoy building next-generation interfaces with smooth animations, modern typography systems, glassmorphism, neon gradients, and elegant micro-interactions.
+
+      </p>
+
+      <div class="skills">
+
+        <div class="skill">UI Design</div>
+        <div class="skill">UX Research</div>
+        <div class="skill">Figma</div>
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">MATLAB</div>
+        <div class="skill">Responsive Design</div>
+
       </div>
+
     </div>
 
-  </section>
+  </div>
 
-  <section id="about">
+</section>
 
-    <div class="reveal">
-      <div class="eyebrow">
-        About
-      </div>
+<section id="portfolio">
 
-      <h2 class="section-title">
-        Who I Am
-      </h2>
+  <div class="reveal">
 
-      <div class="divider"></div>
+    <div class="eyebrow">
+      Portfolio
     </div>
 
-    <div class="about-grid">
+    <h2 class="section-title">
+      Selected Work
+    </h2>
 
-      <div class="glass profile-card reveal">
+    <div class="divider"></div>
 
-        <div class="profile-image">
-          🧑‍💻
-        </div>
+  </div>
 
-        <div class="info">
-          <span class="label">Name</span>
-          <span>Kiven S. Payot</span>
-        </div>
+  <div class="portfolio-grid">
 
-        <div class="info">
-          <span class="label">Age</span>
-          <span>19</span>
-        </div>
+    <div class="card reveal">
 
-        <div class="info">
-          <span class="label">Location</span>
-          <span>Bohol, PH</span>
-        </div>
-
-        <div class="info">
-          <span class="label">Freelance</span>
-          <span style="color:#5fffe0">
-            Available
-          </span>
-        </div>
-
+      <div
+        class="thumb"
+        style="
+          background:
+            linear-gradient(
+              135deg,
+              rgba(124,92,255,.25),
+              rgba(83,255,224,.08)
+            );
+        "
+      >
+        🌐
       </div>
 
-      <div class="reveal">
+      <div class="card-content">
 
-        <p class="bio">
-          I'm passionate about creating immersive user experiences and premium interfaces that combine aesthetics with functionality. My focus is on modern web experiences, interaction design, and front-end development.
-        </p>
+        <div class="tag">
+          Web Design
+        </div>
 
-        <p class="bio">
-          I enjoy building futuristic interfaces with smooth motion, depth, typography systems, and elegant micro-interactions inspired by the next generation of digital products.
-        </p>
+        <div class="card-title">
+          Portfolio Website
+        </div>
 
-        <div class="skills">
+        <div class="card-desc">
 
-          <div class="skill">UI Design</div>
-          <div class="skill">UX Research</div>
-          <div class="skill">Figma</div>
-          <div class="skill">HTML/CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Python</div>
-          <div class="skill">C Programming</div>
-          <div class="skill">MATLAB</div>
-          <div class="skill">Responsive Design</div>
+          Futuristic portfolio interface with immersive animations, glowing gradients, and premium interaction systems.
 
         </div>
 
@@ -1032,216 +1544,172 @@ Modern 2026 Portfolio UI
 
     </div>
 
-  </section>
+    <div class="card reveal">
 
-  <section id="portfolio">
-
-    <div class="reveal">
-      <div class="eyebrow">
-        Portfolio
+      <div
+        class="thumb"
+        style="
+          background:
+            linear-gradient(
+              135deg,
+              rgba(255,95,210,.18),
+              rgba(124,92,255,.08)
+            );
+        "
+      >
+        🤖
       </div>
 
-      <h2 class="section-title">
-        Selected Work
-      </h2>
+      <div class="card-content">
 
-      <div class="divider"></div>
-    </div>
-
-    <div class="portfolio-grid">
-
-      <div class="card reveal">
-
-        <div
-          class="thumb"
-          style="
-            background:
-              linear-gradient(
-                135deg,
-                rgba(139,124,255,0.25),
-                rgba(95,255,224,0.08)
-              );
-          "
-        >
-          🌐
+        <div class="tag">
+          Robotics
         </div>
 
-        <div class="card-content">
-          <div class="tag">
-            Web Design
-          </div>
-
-          <div class="card-title">
-            Portfolio Website
-          </div>
-
-          <div class="card-desc">
-            Premium portfolio interface with futuristic motion design, immersive gradients, and modern interaction systems.
-          </div>
+        <div class="card-title">
+          SumoBot & HockeyBot
         </div>
 
-      </div>
+        <div class="card-desc">
 
-      <div class="card reveal">
+          Embedded robotics systems using sensors, motors, and autonomous movement algorithms.
 
-        <div
-          class="thumb"
-          style="
-            background:
-              linear-gradient(
-                135deg,
-                rgba(255,116,200,0.18),
-                rgba(139,124,255,0.08)
-              );
-          "
-        >
-          🤖
-        </div>
-
-        <div class="card-content">
-          <div class="tag">
-            Robotics
-          </div>
-
-          <div class="card-title">
-            SumoBot & HockeyBot
-          </div>
-
-          <div class="card-desc">
-            Embedded robotics systems using sensors, motors, and autonomous movement algorithms.
-          </div>
-        </div>
-
-      </div>
-
-      <div class="card reveal">
-
-        <div
-          class="thumb"
-          style="
-            background:
-              linear-gradient(
-                135deg,
-                rgba(95,255,224,0.15),
-                rgba(255,116,200,0.08)
-              );
-          "
-        >
-          📐
-        </div>
-
-        <div class="card-content">
-          <div class="tag">
-            Engineering
-          </div>
-
-          <div class="card-title">
-            Root Finder System
-          </div>
-
-          <div class="card-desc">
-            Numerical methods implementation using Python and MATLAB with convergence visualization.
-          </div>
         </div>
 
       </div>
 
     </div>
 
-  </section>
+    <div class="card reveal">
 
-  <section id="contact">
-
-    <div class="reveal">
-      <div class="eyebrow">
-        Contact
+      <div
+        class="thumb"
+        style="
+          background:
+            linear-gradient(
+              135deg,
+              rgba(83,255,224,.15),
+              rgba(255,95,210,.08)
+            );
+        "
+      >
+        📐
       </div>
 
-      <h2 class="section-title">
-        Let's Talk
-      </h2>
+      <div class="card-content">
 
-      <div class="divider"></div>
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="glass contact-card reveal">
-
-        <div class="contact-item">
-          <div class="contact-small">
-            Email
-          </div>
-
-          <div class="contact-big">
-            kivenpayot@gmail.com
-          </div>
+        <div class="tag">
+          Engineering
         </div>
 
-        <div class="contact-item">
-          <div class="contact-small">
-            Phone
-          </div>
-
-          <div class="contact-big">
-            +63 928 622 7787
-          </div>
+        <div class="card-title">
+          Root Finder System
         </div>
 
-        <div class="contact-item">
-          <div class="contact-small">
-            Location
-          </div>
+        <div class="card-desc">
 
-          <div class="contact-big">
-            Bohol, Philippines
-          </div>
+          Numerical methods implementation using Python and MATLAB with convergence visualization.
+
         </div>
-
-      </div>
-
-      <div class="glass form reveal">
-
-        <div class="form-group">
-          <input
-            type="text"
-            placeholder="Your Name"
-          />
-        </div>
-
-        <div class="form-group">
-          <input
-            type="email"
-            placeholder="Your Email"
-          />
-        </div>
-
-        <div class="form-group">
-          <input
-            type="text"
-            placeholder="Subject"
-          />
-        </div>
-
-        <div class="form-group">
-          <textarea
-            placeholder="Tell me about your project..."
-          ></textarea>
-        </div>
-
-        <button class="btn btn-primary">
-          Send Message →
-        </button>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <div class="reveal">
+
+    <div class="eyebrow">
+      Contact
+    </div>
+
+    <h2 class="section-title">
+      Let's Talk
+    </h2>
+
+    <div class="divider"></div>
+
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="glass contact-card reveal">
+
+      <div class="contact-item">
+
+        <div class="contact-small">
+          Email
+        </div>
+
+        <div class="contact-big">
+          kivenpayot@gmail.com
+        </div>
+
+      </div>
+
+      <div class="contact-item">
+
+        <div class="contact-small">
+          Phone
+        </div>
+
+        <div class="contact-big">
+          +63 928 622 7787
+        </div>
+
+      </div>
+
+      <div class="contact-item">
+
+        <div class="contact-small">
+          Location
+        </div>
+
+        <div class="contact-big">
+          Bohol, Philippines
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="glass form reveal">
+
+      <div class="form-group">
+        <input type="text" placeholder="Your Name">
+      </div>
+
+      <div class="form-group">
+        <input type="email" placeholder="Your Email">
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Subject">
+      </div>
+
+      <div class="form-group">
+        <textarea placeholder="Tell me about your project..."></textarea>
+      </div>
+
+      <button class="btn btn-primary">
+        Send Message →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
 </main>
 
 <footer>
+
   <div>
     © 2026 Kiven Payot
   </div>
@@ -1249,14 +1717,16 @@ Modern 2026 Portfolio UI
   <div>
     Designed in Bohol, Philippines
   </div>
+
 </footer>
 
 <script>
 
-  /* Cursor */
+  const dot =
+    document.getElementById('cursor-dot');
 
-  const dot = document.getElementById('cursor-dot');
-  const ring = document.getElementById('cursor-ring');
+  const ring =
+    document.getElementById('cursor-ring');
 
   let mx = 0;
   let my = 0;
@@ -1265,13 +1735,16 @@ Modern 2026 Portfolio UI
   let ry = 0;
 
   document.addEventListener('mousemove', e => {
+
     mx = e.clientX;
     my = e.clientY;
+
   });
 
   function animateCursor() {
-    rx += (mx - rx) * 0.12;
-    ry += (my - ry) * 0.12;
+
+    rx += (mx - rx) * .12;
+    ry += (my - ry) * .12;
 
     dot.style.left = mx + 'px';
     dot.style.top = my + 'px';
@@ -1284,9 +1757,8 @@ Modern 2026 Portfolio UI
 
   animateCursor();
 
-  /* Scroll progress */
-
-  const progress = document.getElementById('scroll-progress');
+  const progress =
+    document.getElementById('scroll-progress');
 
   window.addEventListener('scroll', () => {
 
@@ -1297,68 +1769,70 @@ Modern 2026 Portfolio UI
     const percent =
       (window.scrollY / max) * 100;
 
-    progress.style.width = percent + '%';
+    progress.style.width =
+      percent + '%';
   });
 
-  /* Reveal */
+  const observer =
+    new IntersectionObserver(entries => {
 
-  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
 
-    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
 
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+      });
 
+    }, {
+      threshold: .15
     });
-
-  }, {
-    threshold: 0.15
-  });
 
   document.querySelectorAll('.reveal')
     .forEach(el => observer.observe(el));
 
-  /* Active nav */
+  const sections =
+    document.querySelectorAll('section');
 
-  const sections = document.querySelectorAll('section');
-  const links = document.querySelectorAll('.nav a');
+  const links =
+    document.querySelectorAll('.nav a');
 
-  const navObserver = new IntersectionObserver(entries => {
+  const navObserver =
+    new IntersectionObserver(entries => {
 
-    entries.forEach(entry => {
+      entries.forEach(entry => {
 
-      if (entry.isIntersecting) {
+        if (entry.isIntersecting) {
 
-        links.forEach(link =>
-          link.classList.remove('active')
-        );
-
-        const active =
-          document.querySelector(
-            `.nav a[href="#${entry.target.id}"]`
+          links.forEach(link =>
+            link.classList.remove('active')
           );
 
-        if (active) {
-          active.classList.add('active');
+          const active =
+            document.querySelector(
+              `.nav a[href="#${entry.target.id}"]`
+            );
+
+          if (active) {
+            active.classList.add('active');
+          }
         }
 
-      }
+      });
 
+    }, {
+      threshold: .4
     });
-
-  }, {
-    threshold: 0.4
-  });
 
   sections.forEach(section =>
     navObserver.observe(section)
   );
 
-  /* Particles */
+  const canvas =
+    document.getElementById('particles');
 
-  const canvas = document.getElementById('particles');
-  const ctx = canvas.getContext('2d');
+  const ctx =
+    canvas.getContext('2d');
 
   let width;
   let height;
@@ -1366,8 +1840,14 @@ Modern 2026 Portfolio UI
   const particles = [];
 
   function resize() {
-    width = canvas.width = innerWidth;
-    height = canvas.height = innerHeight;
+
+    width =
+      canvas.width =
+      innerWidth;
+
+    height =
+      canvas.height =
+      innerHeight;
   }
 
   resize();
@@ -1382,20 +1862,30 @@ Modern 2026 Portfolio UI
 
     reset() {
 
-      this.x = Math.random() * width;
-      this.y = Math.random() * height;
+      this.x =
+        Math.random() * width;
 
-      this.r = Math.random() * 1.8 + 0.5;
+      this.y =
+        Math.random() * height;
 
-      this.vx = (Math.random() - .5) * 0.3;
-      this.vy = (Math.random() - .5) * 0.3;
+      this.r =
+        Math.random() * 2 + .5;
 
-      this.life = Math.random();
+      this.vx =
+        (Math.random() - .5) * .3;
+
+      this.vy =
+        (Math.random() - .5) * .3;
+
+      this.life =
+        Math.random();
 
       this.color = [
-        '#8b7cff',
-        '#ff74c8',
-        '#5fffe0'
+
+        '#7c5cff',
+        '#ff5fd2',
+        '#53ffe0'
+
       ][Math.floor(Math.random() * 3)];
     }
 
@@ -1404,18 +1894,21 @@ Modern 2026 Portfolio UI
       this.x += this.vx;
       this.y += this.vy;
 
-      this.life -= 0.002;
+      this.life -= .002;
 
       if (
+
         this.life <= 0 ||
+
         this.x < 0 ||
         this.x > width ||
+
         this.y < 0 ||
         this.y > height
+
       ) {
         this.reset();
       }
-
     }
 
     draw() {
@@ -1430,57 +1923,44 @@ Modern 2026 Portfolio UI
         Math.PI * 2
       );
 
-      ctx.fillStyle = this.color;
+      ctx.fillStyle =
+        this.color;
 
-      ctx.globalAlpha = this.life * 0.6;
+      ctx.globalAlpha =
+        this.life * .7;
 
       ctx.fill();
 
       ctx.globalAlpha = 1;
     }
-
   }
 
-  for (let i = 0; i < 140; i++) {
+  for (let i = 0; i < 150; i++) {
     particles.push(new Particle());
   }
 
   function animateParticles() {
 
-    ctx.clearRect(0, 0, width, height);
+    ctx.clearRect(
+      0,
+      0,
+      width,
+      height
+    );
 
     particles.forEach(p => {
+
       p.update();
       p.draw();
+
     });
 
-    requestAnimationFrame(animateParticles);
+    requestAnimationFrame(
+      animateParticles
+    );
   }
 
   animateParticles();
-
-  /* Hover lighting */
-
-  document.querySelectorAll('.card')
-    .forEach(card => {
-
-      card.addEventListener('mousemove', e => {
-
-        const rect = card.getBoundingClientRect();
-
-        card.style.setProperty(
-          '--x',
-          `${e.clientX - rect.left}px`
-        );
-
-        card.style.setProperty(
-          '--y',
-          `${e.clientY - rect.top}px`
-        );
-
-      });
-
-    });
 
 </script>
 
